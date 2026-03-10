@@ -1,21 +1,15 @@
 public class MatematikaTest {
     public static void main(String[] args) {
-        double a = 100.0;
-        double b = 3.0;
-        double hasilJumlah, hasilKurang, hasilKali, hasilBagi;
 
-        Matematika hitung = new Matematika();
-        
-        hasilJumlah = hitung.jumlah(a, b);
-        hasilKurang = hitung.kurang(a, b);
-        hasilKali = hitung.kali(a, b);
-        hasilBagi = hitung.bagi(a, b);
+        Matematika m = new Matematika();
 
-        System.out.println("\nPROGRAM DEMO OPERASI MATEMATIKA");
-        System.out.println("-------------------------------\n");
-        System.out.println("Penjumlahan " + a + " + " + b + " = " + hasilJumlah);
-        System.out.println("Pengurangan " + a + " - " + b + " = " + hasilKurang);
-        System.out.println("Perkalian " + a + " x " + b + " = " + hasilKali);
-        System.out.println("Pembagian " + a + " / " + b + " = " + hasilBagi);
+        System.out.println("Penjumlahan: " + m.jumlah(10, 5));
+        System.out.println("Pengurangan: " + m.kurang(10, 5));
+        System.out.println("Perkalian: " + m.kali(10, 5));
+        System.out.println("Pembagian: " + m.bagi(10, 5));
+        System.out.println("Modulus: " + m.modulus(10, 5));
+        System.out.println("Pangkat: " + m.pangkat(2, 3));
+        System.out.println("Akar: " + m.akar(16));
+        System.out.println("Logaritma: " + m.logaritma(10));
     }
 }
