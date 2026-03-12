@@ -1,5 +1,5 @@
 class Outer {
-    private String pesan = "Hello dari Outer Class";
+    private String pesan = "Hello dari Outer Class -Rafee";
 
     class Inner {
         void tampilPesan() {
@@ -8,7 +8,7 @@ class Outer {
     }
 }
 
-public class NonStaticInnerClass {
+public class NonStaticInner {
     public static void main(String[] args) {
         Outer outer = new Outer();
         Outer.Inner inner = outer.new Inner();
